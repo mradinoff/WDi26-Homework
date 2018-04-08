@@ -1,0 +1,23 @@
+<h2>Add Mountain</h2>
+
+<form action="/mountains" method="post">
+  <label>Name:</label>
+  <input type="text" name="mountain[name]" placeholder="Mt Massive">
+
+  <label>Image:</label>
+  <input type="url" name="mountain[image]" placeholder="http://...">
+
+  <label>Elevation:</label>
+  <input type="number" name="mountain[elevation]" placeholder="(in Earth days)">
+
+  <label>Location:</label>
+  <input type="number" name="mountain[location]" placeholder="10000000">
+
+  <label>First Summit:</label>
+  <input type="number" name="mountain[first_ascent]" placeholder="1843">
+
+  <label>Easiest Routs:</label>
+  <input type="number" name="mountain[easiest_route]" placeholder="Planes, Trains, Automobile?">
+
+  <button>Create mountain</button>
+</form>

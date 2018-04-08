@@ -1,0 +1,17 @@
+<h2> <%= @artist.name %></h2>
+
+<% unless @artist.albums.empty? %>
+  <h3> Albums: </h3>
+  <ul>
+  <% @artist.albums.each do |album| %>
+    <li> <%= album.name %>
+    </li>
+  </ul>
+  <% end %>
+<% end %>
+
+<h3> Year Active: <%= @artist.years_active %> </h3>
+
+<% unless @artist.image.nil? || @artist.image.empty? %>
+<img class = "feature" src = "<%= artist.image %>" alt = <%= artist.name %>
+<% end  %>

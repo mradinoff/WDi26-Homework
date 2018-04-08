@@ -1,0 +1,6 @@
+<h2> <%= @mountain.name %> </h2>
+
+<div class="controls">
+  <%= link_to 'Edit mountain', mountains_edit_path(@mountain.id) %>
+  <%= button_to 'Delete mountain', mountain_path(@mountain.id), :method => 'delete' %>
+  </div>

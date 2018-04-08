@@ -1,0 +1,9 @@
+body{
+  background-color: grey;
+  color: purple;
+}
+img {
+  border-radius: 100%;
+  border-style: groove;
+  filter: grayscale(70%);
+}

@@ -1,0 +1,17 @@
+<h2> <%= @album.name %></h2>
+
+<% unless @album.artist.nil? %>
+<h3> Artist: </h3>
+<a href ="/artist/<%= @artist.album.id%>"><%= @artist.album.name %>
+<% end %>
+
+<h3> Year of release: <%= @album.year %> </h3>
+
+<% unless @album.image.nil? || @album.image.empty? %>
+<img class = "feature" src = "<%= album.image %>" alt = <%= album.name %>
+<% end  %>
+
+<div class="controls">
+  <a href="/albums/<%= @album.id%>/edit">Edit</a>
+  <a href="/albums/<%= @album.id%>/delete">Delete</a>
+</div>

@@ -1,0 +1,9 @@
+<h1> Bill Murray Movies </h1>
+<ul>
+  <% @movie.each do |n| %>
+  <li>
+    <a href ="/movies/<%= n['id'] %>">
+      <%= n["movie_title"] %>
+    </a>
+    <% end %>
+  </ul>
